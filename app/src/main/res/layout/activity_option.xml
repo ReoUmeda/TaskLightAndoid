@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:id="@+id/dvselect"
+        android:layout_marginLeft="10dp"
+        bootstrap:bootstrapText="照度"
+        bootstrap:bootstrapSize="lg"
+        bootstrap:bootstrapBrand="success" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerdvb"
+        android:drawSelectorOnTop="true"
+        android:layout_toRightOf="@id/dvselect"
+        android:layout_alignBottom="@+id/dvselect"
+        android:layout_alignParentTop="true"
+        android:text="-1">
+    </com.beardedhen.androidbootstrap.BootstrapEditText>
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:id="@+id/tvselect"
+        android:layout_marginLeft="10dp"
+        bootstrap:bootstrapText="色温度"
+        bootstrap:bootstrapSize="lg"
+        bootstrap:bootstrapBrand="success"
+        android:layout_toRightOf="@id/spinnerdvb"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnertvb"
+        android:drawSelectorOnTop="true"
+        android:layout_alignBottom="@+id/tvselect"
+        android:layout_toRightOf="@id/tvselect"
+        android:text="-1"
+        >
+    </com.beardedhen.androidbootstrap.BootstrapEditText>
+
+    <!--<fragment android:name="com.soepatasklight.mai.myapplication.OptionFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--tools:layout="@layout/fragment_option"></fragment>-->
+
+
+</RelativeLayout>
